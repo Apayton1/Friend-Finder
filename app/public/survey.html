@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+</head>
+
+<body>
+
+    <body>
+        <div class="container">
+            <h1>Survey Questions</h1>
+            <hr>
+            <h2>
+                <strong>About You</strong>
+            </h2>
+
+            <hr>
+
+            <h4>Name (Required)</h4>
+            <input type="text" id="name" class="form-control" required="">
+
+            <br> 
+
+            <h4>Link To Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required="">
+            <hr>
+
+            <br>
+
+            <h4><strong>Question 1: I have many healthy relationships in my life.</strong></h4>
+            <select class="chosen-select" id="q1"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 2: You are more of a realist than an optimist.</strong></h4>
+            <select class="chosen-select" id="q2"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 3: Your idea of the perfect vacation involves mountains not sand.</strong></h4>
+            <select class="chosen-select" id="q3"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 4: Happy hour is 24hrs. </strong></h4>
+            <select class="chosen-select" id="q4"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 5: The party is where you are and the party never sleeps. </strong></h4>
+            <select class="chosen-select" id="q5"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 6:In a disagreement the best thing to do is wait it out until the other person apologizes because you are never wrong.</strong></h4>
+            <select class="chosen-select" id="q6"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 7: Spending time alone is more important to me than spending time with others.</strong></h4>
+            <select class="chosen-select" id="q7"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 8: Cats are disgusting, I protect my friends in their presence. </strong></h4>
+            <select class="chosen-select" id="q8"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 9: Saturdays are made for friends, fun, and fiestas.</strong></h4>
+            <select class="chosen-select" id="q9"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+            <h4><strong>Question 10: If my friend doesn’t like you then I don’t like you sorry not sorry.</strong></h4>
+            <select class="chosen-select" id="q10"
+                style="font-weight: bold; border-radius: 5px; padding: 5px; box-shadow: 2px 2px;">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <br>
+            <br>
+
+
+    </body>
+
+</html>
