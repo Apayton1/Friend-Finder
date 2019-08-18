@@ -8,13 +8,13 @@ module.exports = function (app) {
         res.json(friendData);
     });
 
-    app.post("api/friends", (req, res) => {
+    app.post("/api/friends", (req, res) => {
         var yourMatch = {
             name: "",
             photo: "",
             difference: 1000
         };
-
+        
 
         var userResponses = req.body;
         var userScores = userData.scores;
