@@ -5,7 +5,7 @@ var express = require("express");
 
 
 
-
+// <!-- new -->
 module.exports = function (app) {
     app.get('/api/friends', (req, res) => {
         res.json(friendData);
