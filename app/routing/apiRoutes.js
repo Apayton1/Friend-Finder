@@ -3,6 +3,9 @@
 var friendData = require('../data/friends.js');
 var express = require("express");
 
+
+
+
 module.exports = function (app) {
     app.get('/api/friends', (req, res) => {
         res.json(friendData);
@@ -16,44 +19,35 @@ module.exports = function (app) {
         };
         
 
-        var userResponses = req.body;
-        var userScores = userData.scores;
-        var userName = userData.name;
-        var userPic = userData.photo;
+        var userData = req.body;
+        var userScores = userData.answers;
         var totalDifference = 0;
 
-        // userResponses.forEach(current => {
-
-        // });
-
-        // Array.prototype.forEach = function( callback ){
-        //     var array = this;
-        //     for (var i = 0; i < array.length; i++){
-        //         callback( array[i] );
-        //     }
-        // }
         for (var i = 0; i < friendData.length; i++) {
-            var current = userResponses[i];
-            console.log(friends[i].name);
-            console.log(friends[i].score);
             totalDifference = 0;
+            var currentFriend = friendData[i];
+            console.log(currentFriend.name);
+            console.log(currentFriend.scores);
 
             for (var j = 0; j < 10; j++) {
+                var userScore = userScores[j];
+                var friendScore = currentFriend.scores[j];
+                totalDifference += Math.abs( userScore - friendScore );
+                //totalDifference = totalDifference + Math.abs( userScore - friendScore );
+            };
 
-                if(totalDifference <= youMatch.difference) {
+            if(totalDifference <= yourMatch.difference) {
 
-                    yourMatch.name = friends[i].name;
-                    yourMatch.photo = friends[i].photo;
-                    yourMatch.difference = totalDifference;
-                };
-
-                friends.push(userData);
-
-                res.json(yourMatch);
-
-
-
+                yourMatch.name = currentFriend.name;
+                yourMatch.photo = currentFriend.photo;
+                yourMatch.difference = totalDifference;
             };
         };
+        
+
+        /// Add the current user to the collection of users/friends
+        friendData.push(userData);
+
+        res.json(yourMatch);
     });  
 }
